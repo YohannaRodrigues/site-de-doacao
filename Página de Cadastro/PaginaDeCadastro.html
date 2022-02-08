@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./../../../Reset/reset.css" />
+
+    <link rel="stylesheet" href="styleCadastro.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Cadastro</title>
+  </head>
+  <body>
+    <header>
+      <div class="caixa">
+        <ul>
+          <li>
+            <a href="../Página Inicial/PáginaInicial.html"> Página Inicial</a>
+          </li>
+          <li>
+            <a href="../Página de Cadastro/PaginaDeCadastro.html">Cadastro</a>
+          </li>
+          <li>
+            <a href="../Página de Animais/NossosAnimais.html">Nossos Animais</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <h1>Registro</h1>
+    <div class="pessoa">
+      <form>
+        <h1>Cadastro Pessoais:</h1>
+        <div class="divisao">
+          <div class="alinhamento">
+            <label for="nome" class="questionario">Nome:</label>
+            <input type="text" name="nome" id="nome" class="caixas" required />
+            <br /><br />
+          </div>
+          <div class="alinhamento">
+            <label for="idade" class="questionario">Data de Nascimento:</label>
+            <input
+              type="date"
+              name="nascimento"
+              id="nascimento"
+              class="caixas"
+            />
+            <br /><br />
+          </div>
+        </div>
+        <div class="divisao">
+          <div class="alinhamento">
+            <label for="cpf" class="questionario">CPF:</label>
+            <input type="text" name="cpf" id="cpf" class="caixas" required />
+            <br /><br />
+          </div>
+          <div class="alinhamento">
+            <label for="tel" class="questionario">Tel/Cel:</label>
+            <input type="tel" name="tel" id="tel" class="caixas" required />
+            <br /><br />
+          </div>
+        </div>
+        <div class="inteiro">
+          <label for="email" class="questionario">Email:</label>
+          <input type="email" name="email" id="email" class="caixas" required />
+          <br /><br />
+        </div>
+
+        <h1>Cadastro do Animal:</h1>
+        <div class="divisao">
+          <div class="alinhamento">
+            <label for="nomeA" class="questionario">Nome do animal:</label>
+            <input
+              type="text"
+              name="nomeA"
+              id="nomeA"
+              class="caixas"
+              required
+            />
+            <br /><br />
+          </div>
+          <div class="alinhamento">
+            <label for="nascimentoA" class="questionario">
+              Data de Nascimento do animal:
+            </label>
+            <input
+              type="date"
+              name="nascimentoA"
+              id="nascimentoA"
+              class="caixas"
+              required
+            />
+            <br /><br />
+          </div>
+        </div>
+
+        <legend class="questionario">Qual animal é o seu ?</legend>
+        <label for="tipo">Cachorro</label>
+        <input type="radio" name="tipo" id="tipo" checked />
+        <label for="tipo">Coelho</label>
+        <input type="radio" name="tipo" id="tipo" />
+        <label for="tipo">Gato</label>
+        <input type="radio" name="tipo" id="tipo" />
+        <br /><br />
+
+        <legend class="questionario">Sexo:</legend>
+        <label for="sexo">Masculino</label>
+        <input type="radio" name="sexo" id="sexo" checked />
+        <label for="sexo">Feminino</label>
+        <input type="radio" name="sexo" id="sexo" />
+        <br /><br />
+
+        <legend class="questionario">Castrado?</legend>
+        <label for="cast">Sim</label>
+        <input type="radio" name="cast" id="cast" checked />
+        <label for="cast">Não</label>
+        <input type="radio" name="cast" id="cast" />
+        <br /><br />
+
+        <button type="submit" id="enviar" value="enviar">Enviar</button>
+      </form>
+    </div>
+    <footer>
+      <div>Yohanna Rodrigues</div>
+      <div>Tel: (22)997102833</div>
+      <div>Email: yohannarodrigues15@gmail.com</div>
+    </footer>
+
+    <script src="Cadastro.js"></script>
+  </body>
+</html>
