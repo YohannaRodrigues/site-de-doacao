@@ -22,7 +22,11 @@ enviar.addEventListener("click", function (event) {
 
   var cast = document.querySelector("#cast").value;
 
-  console.log("nomePes", nomePes);
-
-  window.alert("Seu cadastro foi realizado com sucesso!");
+  if ((nomePes, data, cpf, email, tel, nomeA, nascA == 0)) {
+    window.alert(
+      "Seu cadastro não pode ser concluido. Verifique suas informações e tente novamente!"
+    );
+  } else {
+    window.alert("Seu cadastro foi realizado com sucesso!");
+  }
 });
