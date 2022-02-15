@@ -16,7 +16,7 @@ a {
   color: white;
   font-weight: bold;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 13px;
   margin: 20px;
 }
 
@@ -29,17 +29,13 @@ ul {
 }
 
 .divisao {
-  display: flex;
+  display: block;
 }
 
-.alinhamento {
-  width: 50%;
-  margin: 10px;
-}
-
+.alinhamento,
 .inteiro {
-  width: 99%;
-  padding: 7px;
+  width: 95%;
+  margin: 10px;
 }
 
 h1 {
@@ -101,7 +97,6 @@ button {
 }
 
 footer {
-  position: absolute;
   bottom: 0;
   background: #341300;
   color: white;
@@ -112,4 +107,36 @@ footer {
   height: 10%;
   margin-top: 20px;
   margin-left: 0;
+}
+
+@media screen and (min-width: 768px) {
+  a {
+    font-size: 20px;
+  }
+
+  .alinhamento {
+    width: 50%;
+  }
+  .inteiro {
+    width: 98%;
+  }
+
+  h1 {
+    margin: 0 0 20px 0;
+  }
+
+  .divisao {
+    display: flex;
+  }
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  footer {
+    position: relative;
+  }
 }
